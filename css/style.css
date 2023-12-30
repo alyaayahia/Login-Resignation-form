@@ -1,0 +1,67 @@
+:root {
+  --color1: rgb(36, 53, 63);
+  --color2: rgb(23, 162, 184);
+}
+body {
+  background-color: var(--color1);
+}
+/* navbar */
+.navbar {
+  background-color: var(--color1) !important;
+  box-shadow: 2px 5px 25px 10px rgba(0, 0, 0, 0.5);
+}
+.navbar-brand {
+  color: white;
+}
+.btn {
+  color: white;
+}
+/* navbar */
+.card {
+  width: 700px;
+  /*  height: 350px; */
+  background-color: var(--color1);
+  border: 1px solid transparent;
+  box-shadow: 2px 5px 25px 10px rgba(0, 0, 0, 0.5);
+}
+h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 500;
+  font-size: 43px;
+  color: var(--color2);
+}
+p {
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  & {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  & {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+  }
+  & .error-caption {
+    width: 320px;
+    height: 220px;
+    background-color: aliceblue;
+  }
+  & h1 {
+    font-size: 30px;
+    color: #000;
+  }
+}

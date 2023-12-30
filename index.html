@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&family=Nunito+Sans:opsz@6..12&family=Pacifico&family=Poppins&family=Titillium+Web:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top d-none">
+      <div class="container">
+        <a class="navbar-brand" href="#">SMART LOGIN </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-warning" type="submit">
+              Logout
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="error d-flex justify-content-center align-items-center d-none">
+      <div
+        class="error-caption d-flex justify-content-center align-items-center text-center"
+      >
+        <div class="layer-error">
+          <h1 class="py-2">Please go and register.</h1>
+          <button type="button" class="btn3 btn btn-danger my-3">Danger</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="layer vh-100 d-flex justify-content-center align-items-center">
+      <div class="card text-center p-5" id="home">
+        <h1 class="head2"></h1>
+        <h1 class="d-block" id="head">Smart Login System</h1>
+        <form class="form d-block">
+          <input
+            type="text"
+            class="form-control my-3 d-none"
+            placeholder="Enter Your Name"
+            id="userName"
+          />
+          <div class="alert alert-danger d-none" role="alert ">
+            Please Enter Your Name
+          </div>
+          <input
+            type="email"
+            class="form-control my-3"
+            placeholder="example@email.com'"
+            id="Email"
+          />
+          <input
+            type="password"
+            class="form-control my-2"
+            placeholder="Enter Your Password"
+            id="password"
+          />
+          <button
+            class="btn btn-outline-info w-100 mt-4 d-block"
+            type="button"
+            id="btn1"
+          >
+            Login
+          </button>
+          <button
+            class="btn btn-outline-info w-100 mt-4 d-none"
+            type="button"
+            id="btn2"
+          >
+            Sign Up
+          </button>
+          <p class="mt-2">
+            Don’t have an account?
+            <a href="#" id="link" class=""> Sign Up </a>
+            <a href="#" id="link2" class="d-none"> SignIn </a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/style.js"></script>
+  </body>
+</html>
