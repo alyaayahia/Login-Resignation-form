@@ -39,12 +39,8 @@ function displayLogin() {
 displayRegistration();
 displayLogin();
 btn2.onclick = function () {
-  if (validateUserName()) {
-    addRegistration();
-    clear();
-  } else {
-    alert("Error");
-  }
+  addRegistration();
+  clear();
 };
 function addRegistration() {
   var userDateRegistration = {
